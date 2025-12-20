@@ -8,12 +8,12 @@ aks_clusters = {
       pod_cidr       = "10.244.0.0/16"
     }
   }
-  dev = {
-    location            = "westus"
-    name                = "dev-aks-cluster"
-    resource_group_name = "dev-aks-rg"
+  aks2 = {
+    location            = "uksouth"
+    name                = "aks2-cluster"
+    resource_group_name = "aks2-rg"
     network = {
-      node_subnet_id = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dev-aks-rg/providers/Microsoft.Network/virtualNetworks/dev-vnet/subnets/aks-subnet"
+      node_subnet_id = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/aks2-rg/providers/Microsoft.Network/virtualNetworks/aks2-vnet/subnets/aks-subnet"
       pod_cidr       = "10.245.0.0/16"
     }
   }
