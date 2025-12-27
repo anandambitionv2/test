@@ -1,4 +1,4 @@
-variable "subscription_id" {
+ttvariable "subscription_id" {
   type        = string
   description = "Azure subscription ID"
 }
